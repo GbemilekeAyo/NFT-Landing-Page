@@ -1,0 +1,47 @@
+.faqs{
+    width: 100%;
+    min-height: 100%;
+    margin-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: #fff;
+}
+
+.faqs_row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10% ;
+    padding: 2rem;
+    border-radius: 5px;
+    
+}
+
+.faqs_row{
+    
+    
+}
+
+
+/*============= MEDIA QUARIES FOR MEDIUM SCREEN=============*/
+@media screen and (max-width:1024px){
+    .faqs_row{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/*============= MEDIA QUARIES FOR SMALL,M   SCREEN=============*/
+@media screen and (max-width:694px){
+    .faqs_row{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .faqs{
+       padding: 2rem;
+    }
+}
+
+
+
+
+

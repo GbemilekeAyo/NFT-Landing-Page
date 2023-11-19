@@ -1,0 +1,154 @@
+.mainheader{
+    width: 100%;
+    min-height: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,5,0.9)),url(../Asset/hero_bg.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding-top: 3rem;
+}
+
+
+.mainheader-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 10% 0 10%;
+    margin: 0 auto;
+}
+
+
+.mainheader-first{
+    flex: 1;
+    margin-top: 5rem;
+}
+.mainheader-first h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.mainheader-first h2{
+    font-size: 4rem;
+    line-height:5rem;
+    font-weight: 700;
+}
+
+
+.mainheader-first p{
+    font-size: 1;
+    line-height:5rem;
+    font-weight:500;
+}
+
+
+
+
+.mainheader-second{
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.pic1{
+    position: absolute;
+    top: 10rem;
+    left: 25rem;
+}
+
+
+
+
+/*============== ANIMATION FOR MAINHEADER-SECOND PIC ===============*/
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .pic1 {
+    animation: rotate 10s linear infinite; /* Rotates the element every 2 seconds */
+  }
+  
+
+
+
+
+
+
+
+
+
+/*======== LARGE SCREENS ========== */
+
+@media screen and (max-width:1024px){
+    .mainheader-flex{
+       display: block;
+       text-align: center;
+    }
+
+    .pic1{
+        left: 22rem;
+    }
+   
+
+    .mainheader-first h1{
+        font-size: 18px;
+        margin-bottom: -1rem;
+    }
+    
+    .mainheader-first > h2{
+        font-size: 2.7rem;
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 3.5rem;
+    }
+    
+}
+
+
+
+
+/*======== SMALL SCREENS ========== */
+
+@media screen and (max-width:694px){
+    .pic1{
+        top: 5rem;
+        left: 11rem;
+    }
+
+    .mainheader-first > h2{
+        padding: 0rem;
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        line-height: 2.5rem;
+        font-weight: 800;
+    }
+
+    .mainheader-first > p{
+        margin-top: 1.5rem;
+       line-height: 1.5rem;
+       font-size: 15px;
+       font-weight: 500;
+    }
+
+
+   
+
+    .mainheader-first > span > button{
+       font-size: 12px;
+       font-weight: 600;
+      }
+  
+   
+   
+    
+}
+
+
+

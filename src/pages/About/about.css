@@ -1,0 +1,339 @@
+.about{
+    width: 100%;
+    min-height: 100vh;
+   background-color: #06182c
+}
+
+.about-flex{
+      width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 10% 0 10%;
+    margin: 0 auto;
+}
+
+.about-first{
+    flex: 1;
+    margin-top: 5rem;
+}
+
+
+.about-first p{
+    font-size: 1.2rem;
+    font-weight:400;
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.about-second{
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+
+.about_product{
+    width: 100%;
+    min-height: 100;
+    position: relative;
+    margin-top: 10%;
+}
+
+.about_product_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin: 0 auto;
+    padding: 0 5rem 0 5rem;
+}
+
+.about_product_row{
+    width: 400px;
+    height: 300px;
+    padding: 10%;
+    background:linear-gradient(108.18deg, rgba(234, 76, 137, 0.1) -2.02%, rgba(77, 68, 198, 0.1));;
+    border-radius: 10px;
+}
+
+.about_product_row h1{
+    display: inline-block;
+    padding: 4px 10px;
+    background: linear-gradient(90deg, rgba(0, 82, 255, 0.3) 0%, transparent 95.61%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about_product_row h2{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.about_product_row p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+/* ========= MEDIA QUARIES FOR MEDIUM SCREEENS ========= */
+
+@media screen and (max-width:1024px) {
+    .about-flex{
+       display: flex;
+       flex-direction: column-reverse;
+       padding: auto;
+    }
+
+    .about-first p{
+        font-size: 1.1rem;
+    }
+
+    .about-second{
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    .about_product_grid{
+        display: block;
+    }
+    .about_product_row{
+        width: 100%;
+        height: 100%;
+        margin: auto 0 2rem;
+    }
+}
+
+
+
+
+/* ========= MEDIA QUARIES FOR SMALL SCREEENS ========= */
+
+@media screen and (max-width:694px) {
+  
+
+    .about_product_grid{
+        display: block;
+        padding: 0;
+    }
+
+    .about_product_row{
+        width: 80%;
+        margin: 0 auto 2rem ;
+       
+    }
+    
+    .about-first > p{
+        font-size: 0.9rem;
+    }
+
+    .about-first > h1{
+        font-size: 0.9rem;
+    }
+
+    .about-first > h2{
+        font-size: 1.5rem;
+        margin-top: -10px;
+    }
+
+    .about-first > span{
+        display: flex;
+    }
+
+    .about-first > span > button{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+/*============= COUNTER STYLES =============*/
+
+.counter{
+    position: relative;
+    width: 100%;
+    Min-height: 100%;
+    margin: 0 auto;
+    padding: 0 5rem 0 6rem;
+    margin-top: 10%;
+}
+
+.counter-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.counter-grid > div{
+    width: 200px;
+ 
+}
+
+.counter-grid > div > h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family:'Montserrat' ;
+}
+
+.counter-grid > div > p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family:'Montserrat' ;
+}
+
+
+
+
+.counter-grid > div > span{
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+
+/*========== MEDIA QUARIES FOR MEDIUM SCREEN ===========*/
+
+@media screen and (max-width:1024px){
+    .counter-grid{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .counter-grid{
+      display: grid;
+      place-items: center;
+    }
+}
+
+
+/*========== MEDIA QUARIES FOR SMALL SCREEN ===========*/
+
+@media screen and (max-width:694px){
+    .counter{
+        margin-top: 10%;
+        padding: 0;
+    }
+    .counter-grid{
+      margin-left: -10%;
+       text-align: center;
+    }
+
+    .counter-grid > div > h1{
+        font-size: 2rem;
+    }
+
+    .counter-grid > div > P{
+        font-size: 1rem;
+    }
+
+    .counter-grid > div > span{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/*======== SIMPLE STEP STYLES =========== */
+
+.simple-step{
+    width: 100%;
+   min-height: 100%;
+    margin: 10% auto;
+    padding: 0 5rem 0 5rem;
+}
+.simple-step h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+     background: linear-gradient(108.18deg, #ea4c89 -12.02%, #4d44c6 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.simple-step-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3%;
+    margin-top: 5%;
+}
+
+.simple_step_row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 280px;
+height: 150px;
+background: linear-gradient(90deg, rgba(217, 217, 217, 0.1) -5.28%, rgba(217, 217, 217, 0) 75.6%);
+position: relative;
+padding: 20px; 
+border: 1px solid rgb(57, 69, 82);
+}
+
+
+.simple_step_row h2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.simple_step_row p{
+    font-size: 1.8rem;
+    filter: brightness(0.5);
+}
+
+  /* ============== MEDIA QUARIES FOR MEDIUM SCREENS =========== */
+@media screen and (max-width:1024px){
+    .simple-step-grid{
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .simple_step_row{
+        width: 100%;
+    }
+
+    
+}
+
+
+
+/* ============== MEDIA QUARIES FOR SMALL SCREENS =========== */
+@media screen and (max-width:694px){
+    .simple-step{
+        width: 100%;
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }
+
+   .simple-step-grid{
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+   }
+
+
+    .simple_step_row{
+      width: 100%;
+      margin-left: 0;
+      display: block;
+    }
+
+    .simple_step_row > h2{
+   font-size: 1.5rem;
+   line-height: 2rem;
+    }
+}

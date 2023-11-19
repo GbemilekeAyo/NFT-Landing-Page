@@ -1,0 +1,33 @@
+.faq{
+    background: linear-gradient(108.18deg, rgba(234, 76, 137, 0.1) -2.02%, rgba(77, 68, 198, 0.1));
+    padding: 2rem;
+}
+
+.faq div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.faq  p{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.514);
+}
+
+
+
+.faq_icon{
+    background: transparent;
+   color: gray;
+   font-size: 1.5rem;
+}
+
+/*============= MEDIA QUARIES FOR MEDIUM SCREEN=============*/
+@media screen and (max-width:1024px){
+    .faqs div{
+        width: 100%;
+        padding: 0;
+    }
+
+}

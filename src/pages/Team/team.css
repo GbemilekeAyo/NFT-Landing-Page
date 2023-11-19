@@ -1,0 +1,83 @@
+.team{
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding-left: 5%;
+   padding-right: 5%;
+}
+
+.team-grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+
+.team-row{
+    width: 300px;
+    height: 350px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(108.18deg, rgba(234, 76, 137, 0.1) -2.02%, rgba(77, 68, 198, 0.1));
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.team-row img{
+    width: 250px;
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+.team-text{
+    margin-top: 2rem;
+}
+
+.team-text h1, p{
+   color: #fff;
+}
+
+.team-text h1 {
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+
+.team-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6) ;
+ }
+
+ .team-row:hover{
+    transform: translateY(-8px);
+ }
+
+ .team-socials{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+
+ /*============ MEDIA QUARIES MEDIUM SCREENS =====================*/
+
+@media screen and (max-width:1024px){
+   
+    .team-grid{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+     }
+     .team-row{
+        width: 100%;
+     }
+     .team-row img{
+       width:100%;
+     }
+}
+
+ 
+
+ 

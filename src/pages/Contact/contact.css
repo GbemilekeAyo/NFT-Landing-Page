@@ -1,0 +1,227 @@
+.contact{
+    width: 100%;
+    min-height: 100%;
+    margin-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 15%;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form{
+    flex: 1;
+}
+
+.contact-form > form{
+    position: relative;
+}
+
+.contact-form  input {
+    width: 100%;
+    padding:1rem 3rem;
+    text-align: left;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.12);
+    border-width: 1px;
+    border-radius: 5px;
+    color: #fff ;
+   outline: none;
+   transition: 0.5s;
+  }
+
+
+  .contact-form textarea{
+    width: 100%;
+    height: 200px;
+    padding:1rem 3rem;
+    text-align: left;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.12);
+    border-width: 1px;
+    border-radius: 5px;
+    color: #fff ;
+    margin-top: 2rem;
+    outline: none;
+    transition: 0.5s;
+   margin-bottom: 2rem;
+  }
+
+  .contact-form input:focus {
+    border: 1px solid #0000ff;
+  }
+
+  .contact-form textarea:focus {
+    border: 1px solid #0000ff;
+  }
+  
+
+.contact-form > form > .form-flex{
+ display:flex;
+ justify-content: space-around;
+}
+
+.contact-form > form > .form-flex { 
+    display:flex;
+    justify-content: space-around;
+   }
+
+   .form-flex span > label{
+    position: absolute;
+    top: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #06182c ;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+   }
+
+   .form-flex span > small{
+    position: absolute;
+    top: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #06182c ;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+   }
+ 
+  .flex2 label:first-child{
+    position: absolute;
+    top: 20%;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #06182c ;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .flex2 label:nth-child(3){
+    position: absolute;
+    top: 39%;
+    left: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #06182c ;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+
+
+.contact-extra{
+    flex: 1;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.contact-extra > h1{
+   color: #fff;
+   font-size: 2rem;
+   font-weight: 500;
+}
+
+.contact-extra > div{
+    display: flex;
+    margin-top: 2rem;
+ }
+
+ .contact-extra > div > svg{
+    color: #0000ff;
+    font-size: 2rem;
+    margin-right:2rem;
+ }
+
+ .contact-extra > div > span > h2{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+ }
+
+ .contact-extra > div > span > p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 600;
+ }
+
+
+ /* ============ MEDIA QUARIES FOR MEDIUM SCREEN ========== */
+
+ @media screen and (max-width:1024px){
+     .contact{
+        margin-top: 30rem;
+     }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .form-flex  input {
+        width: 90%;
+      }
+
+      .contact-extra > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+        text-align: left;
+        margin-left: 0;
+     }
+      
+ }
+
+
+ /* ============ MEDIA QUARIES FOR MEDIUM SCREEN ========== */
+
+ @media screen and (max-width:694px){
+
+
+   .form-flex {
+       flex-direction: column;
+     }
+
+     .form-flex input{
+        width: 100%;
+         }
+
+         .contact{
+            padding: 2rem;
+         }
+
+         .contact-extra > div{
+            flex-direction: column;
+            text-align:center ;
+            padding: 0;
+            
+         }
+
+         .flex2 label:nth-child(3){
+            top: 48%;
+            left: 2rem;
+            
+          }
+        
+          .flex2 label:first-child{
+            top: 32%;
+          }
+     
+          .small{
+            margin-top: 5rem;
+            margin-left: 1.5rem;
+          }
+}
+
+
+
+
+
+
+
+
+
+
+

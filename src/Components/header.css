@@ -1,0 +1,32 @@
+.header h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+     background: linear-gradient(108.18deg, #ea4c89 -12.02%, #4d44c6 60%);
+     text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line{
+    padding: 1px 2px;
+    margin-right: 10px;
+    background: linear-gradient(to right, #ea4c89 , #4d44c6)
+  }
+
+
+  .header h2{
+    font-size: 2.5rem;
+    line-height:5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width:694px) {
+    .header h2{
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+}

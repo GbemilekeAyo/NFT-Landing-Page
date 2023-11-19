@@ -1,0 +1,153 @@
+nav{
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.nav-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+   justify-content: space-around;
+  height: 100%;
+  background:#06182c ;
+  padding: 0.5rem;
+}
+
+.brand{
+  width: 150px;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+
+.nav_menu li {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.4s ease-in;
+}
+
+.nav_menu li:hover {
+  color: #0052ff;
+}
+
+
+
+
+.nav_toggler div{
+  width: 1.7rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #fff;
+  transition: 0.4s ease-in;
+}
+
+.nav_toggler{
+  display: none;
+  cursor: pointer;
+}
+
+
+.extra button{
+  font-size: 18px;
+}
+
+.extra button:hover{
+  background-color: #083db1;
+  border: 1px solid #1a56d6;
+}
+
+
+/*=========== LARGE SCREENS ===============*/
+
+@media screen and (max-width:1024px){
+  .nav_toggler{
+    z-index: 999;
+  }
+  .nav_toggler{
+    display: block;
+  }
+
+  .brand{
+    width: 100px;
+  }
+ 
+  .nav_menu{
+    position: fixed;
+    right: 0;
+    width: 60%;
+    top: 1vh;
+    height: 100vh;
+    background: #06182c;
+    display: block;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 999;
+  }
+
+  .nav-container{
+   justify-content: space-between;
+
+  }
+
+
+  .nav-container ul {
+  text-align: center;
+  line-height: 3.2rem;
+  }
+
+
+  .nav-container li{
+    font-size: 15px;
+     margin-top: 2rem;
+    } 
+
+    .extra{
+      margin-left: 15rem;
+    }
+}
+
+/* =============== SMALLER SCREENS ========*/
+
+@media screen and (max-width:649px){
+  .extra{
+    margin-left: 10rem;
+   }
+
+   .extra button > h1{
+    display: none;
+   }
+}
+
+
+
+
+/* ======== NAV ACTIVE CLASSS ===========*/
+
+.nav_active {
+  transform: translateX(0);
+  line-height: 0;
+}
+
+
+/* ====== ANIMATION   FOR NAV ICON =========== */
+.toggle .line1 {
+   transform: rotate(-50deg) translate(-9px, 10px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform:  rotate(50deg) translate(-4px, -5px);
+  
+}
+
+
+
