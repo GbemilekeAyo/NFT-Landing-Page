@@ -85,11 +85,14 @@
     }
 
     .footer-first h1{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
     }
 
     .footer-first P{
         font-size: 1rem;
+        font-weight: 400;
     }
 
     .footer-socials{

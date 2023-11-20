@@ -138,11 +138,15 @@
     }
 
 
-   
+   .mainheader-first > span{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+   }
 
     .mainheader-first > span > button{
-       font-size: 12px;
-       font-weight: 600;
+       font-size: 0.7rem;
+       font-weight: 700;
+     
       }
   
    
