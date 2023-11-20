@@ -3,14 +3,27 @@ import Header from '../../Components/Header'
 import './contact.css'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Contact = () => {
+
+  //AOS ANIMATION
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing for the animation
+    });
+  }, []); // Empty dependency array ensures the effect runs only once after the initial render
+
+
   return (
     <div id='contact' className='contact '>
       <Header heading="Contact" section="Get In Touch"></Header>
       <div className="contact-container">
-        <div className="contact-form">
+        <div data-aos="fade-up"  className="contact-form">
           <form>
             <div className='form-flex'>
              <span>
@@ -38,7 +51,7 @@ const Contact = () => {
             <button className='btn'>Submit Now</button>
           </form>
         </div>
-        <div className="contact-extra">
+        <div data-aos="fade-up"  className="contact-extra">
           <h1>Contact Info</h1>
           <div>
             <PhoneIcon/>

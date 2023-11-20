@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import './footer.css'
 import FooterImg from '../Asset/logo_footer_white.svg'
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -7,11 +8,25 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PeopleIcon from '@mui/icons-material/People';
 import ListAltIcon from '@mui/icons-material/ListAlt';
+import AOS from 'aos';
+
 
 
 const Footer = () => {
+
+//AOS ANIMATION
+useEffect(() => {
+  AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+    easing: 'ease-in-out', // Easing for the animation
+  });
+}, []); // Empty dependency array ensures the effect runs only once after the initial render
+
+
+
+
   return (
-    <div className='footer'>
+    <div data-aos="fade-up" className='footer'>
         <div className="footer-container">
       <div className="footer-first">
         <h1>Join Our Community For First Access</h1>
