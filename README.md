@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# SIMPLE REACT NFT LANDING PAGE
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Frameworks
+Tailwind CSS =============> https://tailwindcss.com/docs/installation/play-cdn
+AOS animation ============> https://michalsnik.github.io/aos/
+Slider.js ===============> https://swiperjs.com/
 
 ## Available Scripts
 
